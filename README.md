@@ -11,7 +11,6 @@ This project implements an advanced emotion recognition system for audio convers
 - [Usage](#usage)
 - [Service API](#service-api)
 - [Evaluation](#evaluation)
-- [Project Structure](#project-structure)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -188,74 +187,14 @@ The system's performance is evaluated on several metrics:
 - **F1-score**: Harmonic mean between precision and recall
 - **Confusion Matrix**: Visualization of errors between classes
 
-## Project Structure
-
-```
-emotion_recognition_rag/
-├── .gitignore
-├── README.md
-├── requirements.txt
-├── setup.py
-├── config/
-│   ├── __init__.py
-│   └── config.yaml
-├── data/
-│   ├── raw/                      # Raw audio files
-│   ├── processed/                # Transcriptions and extracted features
-│   └── embeddings/               # Utterance embeddings
-├── pipelines/
-│   ├── __init__.py
-│   ├── audio_transcription.py    # Transcription pipeline
-│   ├── emotion_recognition.py    # Emotion recognition pipeline
-│   ├── feature_extraction.py     # Feature extraction pipeline
-│   ├── rag_pipeline.py           # Main RAG pipeline
-│   └── training_pipeline.py      # Model training pipeline
-├── steps/
-│   ├── __init__.py
-│   ├── transcription/
-│   │   ├── __init__.py
-│   │   ├── whisper_transcriber.py  # Transcription with Whisper
-│   │   └── utterance_segmenter.py  # Utterance segmentation
-│   ├── feature_extraction/
-│   │   ├── __init__.py
-│   │   ├── audio_features.py       # Audio feature extraction
-│   │   └── text_features.py        # Text feature extraction
-│   ├── context/
-│   │   ├── __init__.py
-│   │   └── context_processor.py    # Conversational context management
-│   ├── rag/
-│   │   ├── __init__.py
-│   │   ├── embedding_generator.py  # Embedding generation
-│   │   ├── vector_store.py         # Vector storage
-│   │   └── retriever.py            # Context retrieval
-│   └── emotion/
-│       ├── __init__.py
-│       ├── emotion_classifier.py   # Emotion classification
-│       └── llm_emotion_analyzer.py # LLM emotion analysis
-├── models/
-│   ├── __init__.py
-│   ├── audio_model.py             # Model for audio features
-│   ├── text_model.py              # Model for text features
-│   ├── multimodal_model.py        # Model combining audio and text
-│   └── llm_wrapper.py             # Wrapper for LLM
-├── utils/
-│   ├── __init__.py
-│   ├── audio_utils.py             # Audio utilities
-│   ├── text_utils.py              # Text utilities
-│   ├── visualization.py           # Result visualization
-│   ├── evaluation.py              # Performance evaluation
-│   └── api_service.py             # Service API
-└── run.py                         # Main entry point
-```
-
 ## Contributing
 
 Contributions are welcome! Please see the CONTRIBUTING.md file for guidelines.
 
 ## License
 
-This project is licensed under the [insert license type] - see the LICENSE file for details.
+This project is licensed under the MIT - see the LICENSE file for details.
 
 ---
 
-Developed by [Your Name/Organization] © [Year]
+Developed by [Kheireddine AZIZ/Technofutur] © [2025]
