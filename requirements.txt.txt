@@ -1,0 +1,17 @@
+zenml>=0.50.0
+torch>=2.0.0
+transformers>=4.30.0
+openai>=1.0.0
+langchain>=0.0.267
+pandas>=2.0.0
+numpy>=1.24.0
+librosa>=0.10.0
+soundfile>=0.12.1
+matplotlib>=3.7.0
+seaborn>=0.12.0
+whisperx>=1.0.0
+pydub>=0.25.1
+fastapi>=0.95.0
+uvicorn>=0.22.0
+chromadb>=0.4.6
+sentence-transformers>=2.2.2
